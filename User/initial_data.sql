@@ -13,6 +13,6 @@ INSERT INTO "user" (
 VALUES
 
 
-('normaaliciaromero@gmail.com', 'Normi', 'Norma', 'Romero', 'pbkdf2_sha256$600000$5AckuCNmyCM6lgLATnfxT8$nljFWwLfJnCPMsUYzrM2bmGsQdUNIraa18TdPPuJnmU=', '123 Main St', '123456789', 'eva_williams.jpg', '2024-05-23 16:00:04', TRUE, TRUE, FALSE, 2),
+('normaaliciaromero@gmail.com', 'Normi', 'Norma', 'Romero', 'pbkdf2_sha256$1000000$99e2MNRXaHJtYYfHnBIqS0$Yy4CuwwbuIKuFqedoZ+kocAz7vUR4Ce3cNjmIwl7x8c=', '123 Main St', '123456789', 'eva_williams.jpg', '2024-05-23 16:00:04', TRUE, TRUE, FALSE, 2),
 
-('parroquia_santodomingo.caritas@gmail.com', 'Admin', 'Administrador', 'Del Sistema', 'pbkdf2_sha256$600000$TM6SUusGx9g4tG3ixjFULr$2D2mz/i5G1/1mEx4bhuIm6NKwPqmg3ZafjD0KD9SLFA=', 'localhost', '123456789', 'michael_brown.jpg', '2024-05-23 16:00:04', TRUE, TRUE, TRUE, 3);
+('voluntarias_sanjose@gmail.com', 'Admin', 'Administrador', 'Del Sistema', 'pbkdf2_sha256$1000000$CM7xsLNuxifDNtbItJuM9Q$GPuQ8c9eEghHylJsh4xYJzeTQyV0kzaJJrncrULGMDo=', 'localhost', '123456789', 'michael_brown.jpg', '2024-05-23 16:00:04', TRUE, TRUE, TRUE, 3);
