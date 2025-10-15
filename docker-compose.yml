@@ -1,0 +1,26 @@
+version: '3'
+services:
+  db:
+    image: postgres:16
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: gunicorn Caritas.wsgi:application --bind 0.0.0.0:8000 --error-logfile /Caritas/logs/django_error.log
+    volumes:
+      - .:/Caritas
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

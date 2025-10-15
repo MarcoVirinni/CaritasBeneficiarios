@@ -17,6 +17,8 @@ class Beneficiario(models.Model):
     tipo_vivienda = models.CharField(max_length=10, choices=TIPO_VIVIENDA_CHOICES)
     tiene_beneficio = models.BooleanField(default=False)
     cual_beneficio = models.TextField(blank=True, null=True)
+    retira = models.TextField(blank=True, null=True, help_text="Ej: un par de zapatillas, una remera, un bolsón de comida, etc.")
+
     observaciones = models.TextField(blank=True, null=True)
 
     def __str__(self):
