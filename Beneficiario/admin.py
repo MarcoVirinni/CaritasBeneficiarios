@@ -23,7 +23,7 @@ class BeneficiarioForm(forms.ModelForm):
 @admin.register(Beneficiario)
 class BeneficiarioAdmin(admin.ModelAdmin):
     form = BeneficiarioForm
-    list_display = ('apellido', 'nombre', 'cuil_dni', 'telefono', 'tipo_vivienda', 'tiene_beneficio')
+    list_display = ('apellido', 'nombre', 'fecha_nacimiento', 'cuil_dni', 'telefono', 'tipo_vivienda', 'tiene_beneficio')
     search_fields = ('apellido', 'nombre', 'cuil_dni', 'telefono')
     list_filter = ('tipo_vivienda', 'tiene_beneficio')
 

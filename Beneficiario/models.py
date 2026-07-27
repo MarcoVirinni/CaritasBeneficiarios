@@ -9,7 +9,10 @@ class Beneficiario(models.Model):
 
     apellido = models.CharField(max_length=100)
     nombre = models.CharField(max_length=100)
-
+    fecha_nacimiento = models.DateField(
+    blank=True,
+    null=True,
+    verbose_name="Fecha de nacimiento")
     domicilio = models.TextField(blank=True, null=True)
     cuil_dni = models.CharField(max_length=20, unique=True, blank=True, null=True)
     edad = models.PositiveIntegerField(blank=True, null=True)
